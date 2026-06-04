@@ -27,10 +27,10 @@ Header{
     color: white;
     gap: 40px;
 }
-h1{
+.HeaderItem h1{
     font-size: 130px;
 }
-h2{
+.HeaderItem h2{
     font-size: 50px;
     color: rgb(189, 189, 189);
 }
@@ -88,3 +88,69 @@ nav{
   0 0 50px rgba(255, 255, 31, 0.5),
   0 0 50px #ffaa0d66;
 }
+.Expertise{
+    width: 100%;
+    background: rgb(33, 36, 43);
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+}
+.ExpertiseText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.ExpertiseItem{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid white;
+    padding: 20px;
+}
+.ExpertiseItemImg{
+    width: 15%;
+    height: 100%;
+}
+.ExpertiseItemText{
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    font-size: 25px;
+}
+.ExpertiseItems{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ExpertiseItem p{
+    font-size: 27px;
+}
+.ExpertiseItem span{
+    font-size: 23px;
+    color: grey;
+}
+.ExpertiseItemCode{
+    width: 100%;
+        font-size: 27px;
+        margin-left: 23px;
+        font-weight: 100;
+}
+.BackgroundImg{
+     opacity: 0.2;
+     position: absolute;
+     top: 1250px;
+}
+main{
+    width: 100%;
+    height: 500px;
+    background: rgb(33, 36, 43);}
