@@ -6,6 +6,14 @@
 font-weight: 600;
 letter-spacing: 0.04em;
 }
+html {
+    scroll-behavior: smooth;
+}
+a{
+    transition: all 0.2s;
+        text-decoration: none;
+
+}
 body{
             background: rgb(30, 30, 30);
 
@@ -45,6 +53,7 @@ nav{
     align-items: center;
     gap: 22%;
     padding: 30px;
+    transition: all 1s ease;
 }
 .NavLogo{
     width: 10%;
@@ -69,6 +78,7 @@ nav{
     justify-content: center;
     height: 80px;
     font-size: 20px;
+    
         transition: all 0.6s;
     
 }
@@ -100,6 +110,9 @@ nav{
     flex-wrap: wrap;
     color: white;
     justify-content: space-around;
+    opacity: 0;
+          transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .ExpertiseText{
     width: 100%;
@@ -153,7 +166,7 @@ nav{
 .BackgroundImg{
      opacity: 0.2;
      position: absolute;
-     top: 1250px; 
+     top: 500px; 
      z-index: 1;
 }
 main{
@@ -164,6 +177,9 @@ main{
    display: flex;
    justify-content: center;
    align-items: center;
+       opacity: 0;
+          transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .WeatherForecastImg{
     width: 55%;
@@ -235,10 +251,12 @@ aside{
             flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 200px;
-
+    opacity: 0;
+          transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .asideItem{
-    width: 30%;
+    width: 100%;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -261,6 +279,8 @@ aside{
     font-size: 20px;
     color: white;
     z-index: 2;
+        text-decoration: none;
+
 }
 .asideFilters{
     width: 100%;
@@ -276,15 +296,19 @@ footer{
     display: flex;
     justify-content: space-around;
     padding: 50px;
+        opacity: 0;
+          transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .footerItem{
     width: 20%;
     height: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .AccordionBlock{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100%;
     height: 1000px;
     display: flex;
@@ -292,6 +316,9 @@ footer{
     overflow: hidden;
     justify-content: center;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 .AccordionBlock h1{
     width: 100%;
@@ -334,4 +361,53 @@ footer{
 }
 .accordion-container{
     width: 40%;
+}
+aside a{
+    width: 30%;
+    height: auto;
+}
+.Expertise.viewed{
+    transform: translateY(0);
+    opacity: 1;
+}
+main.viewed{
+        transform: translateY(0);
+    opacity: 1;
+}
+aside.viewed{
+        transform: translateY(0);
+    opacity: 1;
+}
+footer.viewed{
+        transform: translateY(0);
+    opacity: 1;
+}
+.AccordionBlock.viewed{
+        transform: translateY(0);
+    opacity: 1;
+}
+.footerItem a{
+    width: 5%;
+    color: white;
+    text-decoration: none;
+}
+.footerItem a:hover{
+    transform: scale(1.05);
+}
+.navScrolled{
+    position: fixed;
+    z-index: 50;
+    background: rgba(32, 32, 41, 0.541);
+}
+nav.navScrolled {
+    animation: navSlideDown 0.6s ease;
+}
+
+@keyframes navSlideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
