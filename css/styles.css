@@ -411,3 +411,11 @@ nav.navScrolled {
         transform: translateY(0);
     }
 }
+.footerItem a{
+    width: 5%;
+    color: white;
+    text-decoration: none;
+}
+.asideItem{
+    width: 100%;
+}
