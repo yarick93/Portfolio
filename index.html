@@ -1,166 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css">
-<script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
 
 </head>
 
 <body>
     <div class="wrapper">
-        <Header>
+        <Header id="Header">
             <div id="Ball" class="HeaderBall">
 
             </div>
-            <nav>
+            <nav id="nav">
                 <div class="NavLogo">
                     Yaroslav
                 </div>
                 <div class="NavItems">
-                    <div class="NavItem">Home</div>
-                    <div class="NavItem">Expertise</div>
-                    <div class="NavItem">Work</div>
-                    <div class="NavItem">Experience</div>
-                    <div class="NavItem">Contact</div>
+                    <a href="#Header">
+                        <div class="NavItem">Home</div>
+                    </a>
+                    <a href="#Expertise">
+                        <div class="NavItem">Expertise</div>
+                    </a>
+                    <a href="#Work">
+                        <div class="NavItem">Work</div>
+                    </a>
+                    <a href="#Experience">
+                        <div class="NavItem">Experience</div>
+                    </a>
+                    <a href="#Contact">
+                        <div class="NavItem">Contact</div>
+                    </a>
                 </div>
             </nav>
             <div class="HeaderItem">
-                <h1>Puysha Yaroslav</h1>
+                <h1>Puisha Yaroslav</h1>
                 <h2>FrontEnd Developer</h2>
             </div>
         </Header>
-        <section class="Expertise">
+        <section id="Expertise" class="Expertise animate-block">
             <h1 class="ExpertiseText">My Expertise</h1>
             <div class="ExpertiseItems">
-            <div class="ExpertiseItem">
-                <div class="ExpertiseItemText">
-                    <img class="ExpertiseItemImg" src="./img//ReactLogo.png" alt="">
-                    <h2>FrontEnd Dev</h2>
-                </div>
-                <p>
-                   <span> &lt;h3&gt;</span> <br>
-                   <div class="ExpertiseItemCode"> Web developing with HTML, CSS, JS and React. Improving my skills every day.</div>
+                <div class="ExpertiseItem">
+                    <div class="ExpertiseItemText">
+                        <img class="ExpertiseItemImg" src="./img//ReactLogo.png" alt="">
+                        <h2>FrontEnd Dev</h2>
+                    </div>
+                    <p>
+                        <span> &lt;h3&gt;</span> <br>
+                    <div class="ExpertiseItemCode"> Web developing with HTML, CSS, JS and React. Improving my skills
+                        every day.</div>
                     <br> <span> &lt;/h3&gt;</span>
-                </p>
+                    </p>
+                </div>
+                <div class="ExpertiseItem">
+                    <div class="ExpertiseItemText">
+                        <img class="ExpertiseItemImg GithubLogo" src="./img//githubLogo.webp" alt="">
+                        <h2>Version Control</h2>
+                    </div>
+                    <p>
+                        <span> &lt;h3&gt;</span> <br>
+                    <div class="ExpertiseItemCode"> Managing code and project with Git and Github - tracking every
+                        change, keeping everything in order.</div>
+                    <br> <span> &lt;/h3&gt;</span>
+                    </p>
+                </div>
             </div>
-            <div class="ExpertiseItem">
-                <div class="ExpertiseItemText">
-                <img class="ExpertiseItemImg GithubLogo" src="./img//githubLogo.webp" alt="">
-                <h2>Version Control</h2>
-            </div>
-            <p>
-               <span> &lt;h3&gt;</span> <br>
-               <div class="ExpertiseItemCode"> Managing code and project with Git and Github - tracking every change, keeping everything in order.</div>
-                <br> <span> &lt;/h3&gt;</span>
-            </p></div></div>
             <img src="./img//backgroundImage.png" alt="" class="BackgroundImg">
         </section>
-        <main>
+        <main class="animate-block" id="Work">
             <div class="mainText">
                 <h1>
                     MY WORK
                 </h1>
                 <p>
-Built a responsive weather app for locations across Ukraine using a modern JavaScript stack and external weather APIs. Users can search cities and instantly see current temperature, humidity, and weather conditions in a clean, mobile-friendly interface.
+                    Built a responsive weather app for locations across Ukraine using a modern JavaScript stack and
+                    external weather APIs. Users can search cities and instantly see current temperature, humidity, and
+                    weather conditions in a clean, mobile-friendly interface.
                 </p>
             </div>
             <div class="mainWork">
-              
+
                 <div class="mainWorkText">
-                  <img class="ArrowImage" src="./img//ArrowImage.png" alt="">
+                    <img class="ArrowImage" src="./img//ArrowImage.png" alt="">
                     <h2 class="FeaturedProject">Featured Project</h2>
                     <h2 class="ProjectDescription">Weather Forecast App</h2>
-                    <a class="ViewProjectLink" href="https://yarick93.github.io/weather-app/"><button class="ViewProject">View Project</button></a>
+                    <a class="ViewProjectLink" href="https://yarick93.github.io/weather-app/"><button
+                            class="ViewProject">View Project</button></a>
                 </div>
                 <img src="./img/WeatherForecast.png" alt="" class="WeatherForecastImg">
             </div>
         </main>
-        <aside>
+        <aside class="animate-block">
             <div class="asideFilters">
                 filter by:
                 <button class="filter">All</button>
                 <button class="filter">Web development</button>
             </div>
-            <div class="asideItem">
-                <img class="asideItemImg" src="./img//WeatherForecast.png" alt="">
-            <div class="asideItemText">
-                <p>Weather Forecast App</p>
-            <p>Web Development</p>
-        </div>
-            </div>
-            <div class="asideItem">
-                <img class="asideItemImg" src="./img/HairdresserImg.png" alt="">
-                        <div class="asideItemText">
-                <p>Hairdresser front-end project</p>
-            <p>Web Development</p>
-        </div>
-            </div>
+            <a href="https://yarick93.github.io/weather-app/">
+                <div class="asideItem">
+                    <img class="asideItemImg" src="./img//WeatherForecast.png" alt="">
+                    <div class="asideItemText">
+                        <p>Weather Forecast App</p>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://yarick93.github.io/hairdresser/">
+                <div class="asideItem">
+                    <img class="asideItemImg" src="./img/HairdresserImg.png" alt="">
+                    <div class="asideItemText">
+                        <p>Hairdresser front-end project</p>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
         </aside>
-        <div class="AccordionBlock">
-            <h1>  My Skills</h1>
-          
-           <div class="accordion-container">
-  <div class="ac">
-    <h2 class="ac-header">
-      <button type="button" class="ac-trigger">HTML5 & CSS3</button>
-    </h2>
-    <div class="ac-panel">
-      <p class="ac-text">I build modern, responsive web pages using semantic HTML5 elements to ensure better accessibility and structure. I apply a Desktop First approach, carefully scaling down layouts using media queries and clean CSS to guarantee that the user interface adapts flawlessly and remains pixel-perfect across all screen sizes, from large monitors to smartphones.</p>
-    </div>
-  </div>
+        <div id="Experience" class="AccordionBlock animate-block">
+            <h1> My Skills</h1>
 
-  <div class="ac">
-    <h2 class="ac-header">
-      <button type="button" class="ac-trigger">Flexbox & CSS Grid</button>
-    </h2>
-    <div class="ac-panel">
-      <p class="ac-text">I am highly comfortable with modern CSS layout systems to create flexible user interfaces. I use Flexbox as my primary tool for one-dimensional layouts, alignment, and spacing. For more complex, two-dimensional layouts, I implement CSS Grid to build structured and responsive page layouts.</p>
-    </div>
-  </div>
+            <div class="accordion-container animate-block">
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">HTML5 & CSS3</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">I build modern, responsive web pages using semantic HTML5 elements to ensure
+                            better accessibility and structure. I apply a Desktop First approach, carefully scaling down
+                            layouts using media queries and clean CSS to guarantee that the user interface adapts
+                            flawlessly and remains pixel-perfect across all screen sizes, from large monitors to
+                            smartphones.</p>
+                    </div>
+                </div>
 
-  <div class="ac">
-    <h2 class="ac-header">
-      <button type="button" class="ac-trigger">JavaScript</button>
-    </h2>
-    <div class="ac-panel">
-      <p class="ac-text">I have a solid mid-level understanding of JavaScript, allowing me to add deep interactivity to web pages. I write modern code using ES6+ features and efficiently handle DOM events. I am comfortable managing dynamic data and application logic to connect UI elements with functional code.</p>
-    </div>
-  </div>
-    <div class="ac">
-    <h2 class="ac-header">
-      <button type="button" class="ac-trigger">React.js</button>
-    </h2>
-    <div class="ac-panel">
-      <p class="ac-text">I use React to build dynamic and interactive single-page or multi-page applications. I understand component-driven development and how to break UIs down into reusable pieces. I effectively manage application state using hooks like useState to handle user data, events, and dynamic content updates.Also i understand API works.</p>
-    </div>
-  </div>
-      <div class="ac">
-    <h2 class="ac-header">
-      <button type="button" class="ac-trigger">Git & GitHub</button>
-    </h2>
-    <div class="ac-panel">
-      <p class="ac-text">I use Git as an essential part of my workflow to track code changes and maintain version control. I am comfortable working through the VS Code terminal to manage branches, commit updates, and push code to GitHub repositories, ensuring a clean and organized development history.</p>
-    </div>
-  </div>
-</div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">Flexbox & CSS Grid</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">I am highly comfortable with modern CSS layout systems to create flexible
+                            user interfaces. I use Flexbox as my primary tool for one-dimensional layouts, alignment,
+                            and spacing. For more complex, two-dimensional layouts, I implement CSS Grid to build
+                            structured and responsive page layouts.</p>
+                    </div>
+                </div>
+
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">JavaScript</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">I have a solid mid-level understanding of JavaScript, allowing me to add deep
+                            interactivity to web pages. I write modern code using ES6+ features and efficiently handle
+                            DOM events. I am comfortable managing dynamic data and application logic to connect UI
+                            elements with functional code.</p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">React.js</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">I use React to build dynamic and interactive single-page or multi-page
+                            applications. I understand component-driven development and how to break UIs down into
+                            reusable pieces. I effectively manage application state using hooks like useState to handle
+                            user data, events, and dynamic content updates.Also i understand API works.</p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button type="button" class="ac-trigger">Git & GitHub</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p class="ac-text">I use Git as an essential part of my workflow to track code changes and
+                            maintain version control. I am comfortable working through the VS Code terminal to manage
+                            branches, commit updates, and push code to GitHub repositories, ensuring a clean and
+                            organized development history.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer>
+        <footer class="animate-block" id="Contact">
             <div class="footerItem">
                 Available for select freelance opportunities
             </div>
             <div class="footerItem">
                 Have an exciting project you need help with?
-Send me an email or contact me via instant message!
+                Send me an email or contact me via instant message!
             </div>
             <div class="footerItem">
-                vpuysga@gmail.com
-                <a href="">Telegram</a>
-                <a href="">Github</a>
-                <a href="">WhatsApp</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vpuysga@gmail.com">vpuysga@gmail.com</a>
+                <a href="https://t.me//Yarick92">Telegram</a>
+                <a href="https://github.com/yarick93">Github</a>
+                <a href="https://api.whatsapp.com/send?phone=380953585550">WhatsApp</a>
             </div>
         </footer>
     </div>
