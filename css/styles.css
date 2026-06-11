@@ -302,7 +302,7 @@ footer{
 }
 .footerItem{
     width: 20%;
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
