@@ -1,28 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
-font-weight: 600;
-letter-spacing: 0.04em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+font-family: "Karla", sans-serif;
+font-weight: 500;
 }
+
 html {
     scroll-behavior: smooth;
 }
-a{
+
+a {
     transition: all 0.2s;
-        text-decoration: none;
+    text-decoration: none;
 
 }
-body{
-            background: rgb(30, 30, 30);
+
+body {
+    background: rgb(30, 30, 30);
 
 }
-.wrapper{
-    width: 100%;
+
+.wrapper {
+    width: 100vw;
     height: auto;
 }
-Header{
+
+Header {
     width: 100%;
     height: 1000px;
     background: url(../img/HeaderBackground.png);
@@ -30,7 +37,8 @@ Header{
     display: flex;
     flex-wrap: wrap;
 }
-.HeaderItem{
+
+.HeaderItem {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,23 +47,27 @@ Header{
     color: white;
     gap: 40px;
 }
-.HeaderItem h1{
+
+.HeaderItem h1 {
     font-size: 130px;
 }
-.HeaderItem h2{
+
+.HeaderItem h2 {
     font-size: 50px;
     color: rgb(189, 189, 189);
 }
-nav{
+
+nav {
     width: 100%;
     display: flex;
     height: 125px;
     align-items: center;
-    gap: 22%;
+    gap: 12.5%;
     padding: 30px;
     transition: all 1s ease;
 }
-.NavLogo{
+
+.NavLogo {
     width: 10%;
     height: 100px;
     display: flex;
@@ -65,12 +77,14 @@ nav{
     color: white;
     font-weight: bold;
 }
-.NavItems{
-    width: 40%;
+
+.NavItems {
+    width: 60%;
     display: flex;
     justify-content: space-around;
 }
-.NavItem{
+
+.NavItem {
     color: white;
     width: 15%;
     display: flex;
@@ -78,31 +92,35 @@ nav{
     justify-content: center;
     height: 80px;
     font-size: 20px;
-    
-        transition: all 0.6s;
-    
+
+    transition: all 0.6s;
+
 }
+
 .NavItems:hover .NavItem {
-  color: rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
 }
 
 .NavItems:hover .NavItem:hover {
-  color: white;
+    color: white;
 }
-.HeaderBall{
+
+.HeaderBall {
     transition: all 1s;
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    background: radial-gradient(  farthest-corner at 20px 20px, white 2%, Yellow, rgb(255, 0, 98));
+    background: radial-gradient(farthest-corner at 20px 20px, white 2%, Yellow, rgb(255, 0, 98));
     position: absolute;
     top: 22%;
     left: 55%;
-    box-shadow: -2px 10px 70px linear-gradient(Yellow,orange);box-shadow:
-  0 0 50px rgba(255, 255, 31, 0.5),
-  0 0 50px #ffaa0d66;
+    box-shadow: -2px 10px 70px linear-gradient(Yellow, orange);
+    box-shadow:
+        0 0 50px rgba(255, 255, 31, 0.5),
+        0 0 50px #ffaa0d66;
 }
-.Expertise{
+
+.Expertise {
     width: 100%;
     background: rgb(30, 30, 30);
     display: flex;
@@ -111,30 +129,35 @@ nav{
     color: white;
     justify-content: space-around;
     opacity: 0;
-          transform: translateY(50px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.ExpertiseText{
+
+.ExpertiseText {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
 }
-.ExpertiseItem{
+
+.ExpertiseItem {
     width: 30%;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border: 3px solid white;
-    padding: 20px;  z-index: 2;
+    padding: 20px;
+    z-index: 2;
 }
-.ExpertiseItemImg{
+
+.ExpertiseItemImg {
     width: 15%;
     height: 100%;
 }
-.ExpertiseItemText{
+
+.ExpertiseItemText {
     width: 100%;
     display: flex;
     height: auto;
@@ -143,95 +166,111 @@ nav{
     height: 60px;
     font-size: 25px;
 }
-.ExpertiseItems{
+
+.ExpertiseItems {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ExpertiseItem p{
+
+.ExpertiseItem p {
     font-size: 27px;
 }
-.ExpertiseItem span{
+
+.ExpertiseItem span {
     font-size: 23px;
-  
+
     color: grey;
 }
-.ExpertiseItemCode{
+
+.ExpertiseItemCode {
     width: 100%;
-        font-size: 27px;
-        margin-left: 23px;
-        font-weight: 100;
+    font-size: 27px;
+    margin-left: 23px;
+    font-weight: 100;
 }
-.BackgroundImg{
-     opacity: 0.2;
-     position: absolute;
-     top: 500px; 
-     z-index: 1;
+
+.BackgroundImg {
+    opacity: 0.2;
+    position: absolute;
+    top: 500px;
+    z-index: 1;
 }
-main{
+
+main {
     width: 100%;
     height: auto;
-        background: rgb(30, 30, 30);
-        margin-top: 200px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-       opacity: 0;
-          transform: translateY(50px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+    background: rgb(30, 30, 30);
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.WeatherForecastImg{
+
+.WeatherForecastImg {
     width: 55%;
     height: 400px;
 }
-.mainWork{
+
+.mainWork {
     width: 60%;
     display: flex;
     gap: 10%;
-    padding:20px;
+    padding: 20px;
 }
-.mainText{
+
+.mainText {
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
     padding: 40px;
-height: 500px;
-color: white;
+    height: 500px;
+    color: white;
 }
-.mainText h1{
+
+.mainText h1 {
     font-size: 120px;
 }
-.mainText p{
+
+.mainText p {
     font-size: 20px;
 }
-.mainWorkText{
+
+.mainWorkText {
     width: 40%;
-height: auto;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: flex-end;
-height: 425px;
-align-items: center;
-gap: 20px;
-justify-content: flex-end;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 425px;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
 }
-.FeaturedProject{
+
+.FeaturedProject {
     color: white;
     font-size: 40px;
 }
-.ProjectDescription{
-        color: white;
+
+.ProjectDescription {
+    color: white;
     font-size: 25px;
 }
-.ArrowImage{
+
+.ArrowImage {
     width: 40%;
     height: 100px;
 }
-.ViewProject{
+
+.ViewProject {
     width: 100%;
     height: 100%;
     background: rgb(176, 41, 255);
@@ -239,35 +278,40 @@ justify-content: flex-end;
     border: none;
     border-radius: 7px;
 }
-.ViewProjectLink{
+
+.ViewProjectLink {
     width: 40%;
     height: 50px;
 }
-aside{
+
+aside {
     width: 100%;
     height: 600px;
     display: flex;
-            background: rgb(30, 30, 30);
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 200px;
+    background: rgb(30, 30, 30);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 200px;
     opacity: 0;
-          transform: translateY(50px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.asideItem{
+
+.asideItem {
     width: 100%;
     height: 500px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-.asideItemImg{
+
+.asideItemImg {
     width: 100%;
     height: 350px;
     transition: all 0.5s;
 }
-.asideItemText{
+
+.asideItemText {
     width: 100%;
     display: flex;
     height: 150px;
@@ -279,16 +323,19 @@ aside{
     font-size: 20px;
     color: white;
     z-index: 2;
-        text-decoration: none;
+    text-decoration: none;
 
 }
-.asideFilters{
+
+.asideFilters {
     width: 100%;
 }
-.asideItem:hover .asideItemImg{
+
+.asideItem:hover .asideItemImg {
     transform: scale(1.2);
 }
-footer{
+
+footer {
     width: 100%;
     height: 200px;
     background: black;
@@ -296,18 +343,20 @@ footer{
     display: flex;
     justify-content: space-around;
     padding: 50px;
-        opacity: 0;
-          transform: translateY(50px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.footerItem{
+
+.footerItem {
     width: 20%;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.AccordionBlock{
+
+.AccordionBlock {
     margin-top: 50px;
     width: 100%;
     height: 1000px;
@@ -320,199 +369,254 @@ footer{
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
 }
-.AccordionBlock h1{
+
+.AccordionBlock h1 {
     width: 100%;
     text-align: center;
     font-size: 70px;
     color: white;
 }
-.Accordion{
+
+.Accordion {
     width: 30%;
 
 }
-.ac{
+
+.ac {
     width: 100%;
     border: none !important;
-      border-radius: 8px; 
-  overflow: hidden;  
-  margin-bottom: 10px; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
-.ac-header{
+
+.ac-header {
     background: rgb(116, 12, 220);
 
 }
-.ac-panel{
+
+.ac-panel {
     background: rgb(36, 29, 65);
-    
+
 }
-.ac .ac-trigger{
-      padding: 20px  !important;
-      font-size: 20px !important;
+
+.ac .ac-trigger {
+    padding: 20px !important;
+    font-size: 20px !important;
 }
+
 .ac .ac-panel .ac-text {
-  padding-top: 50px !important;
+    padding-top: 50px !important;
     padding-bottom: 50px !important;
     padding-left: 30px !important;
 }
+
 .ac .ac-trigger,
 .ac .ac-panel,
 .ac .ac-text {
-  color: #ffffff !important;
+    color: #ffffff !important;
 }
-.accordion-container{
+
+.accordion-container {
     width: 40%;
 }
-aside a{
+
+aside a {
     width: 30%;
     height: auto;
 }
-.Expertise.viewed{
+
+.Expertise.viewed {
     transform: translateY(0);
     opacity: 1;
 }
-main.viewed{
-        transform: translateY(0);
+
+main.viewed {
+    transform: translateY(0);
     opacity: 1;
 }
-aside.viewed{
-        transform: translateY(0);
+
+aside.viewed {
+    transform: translateY(0);
     opacity: 1;
 }
-footer.viewed{
-        transform: translateY(0);
+
+footer.viewed {
+    transform: translateY(0);
     opacity: 1;
 }
-.AccordionBlock.viewed{
-        transform: translateY(0);
+
+.AccordionBlock.viewed {
+    transform: translateY(0);
     opacity: 1;
 }
-.footerItem a{
+
+.footerItem a {
     width: 5%;
     color: white;
     text-decoration: none;
 }
-.footerItem a:hover{
+
+.footerItem a:hover {
     transform: scale(1.05);
 }
-.navScrolled{
+
+.navScrolled {
     position: fixed;
     z-index: 50;
     background: rgba(32, 32, 41, 0.541);
 }
+
 nav.navScrolled {
+    width: 100%;
     animation: navSlideDown 0.6s ease;
+    justify-content: center;
+    align-items: center;
+    .NavItems{
+        width: 90%;
+    }
 }
+
 
 @keyframes navSlideDown {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(0);
     }
 }
-.footerItem a{
+
+.footerItem a {
     width: 5%;
     color: white;
     text-decoration: none;
 }
-.asideItem{
+
+.asideItem {
     width: 100%;
 }
-@media (max-width: 450px){
-    .NavLogo{
+
+@media (max-width: 450px) {
+    .NavLogo {
         font-size: 25px;
     }
-    .NavItem{
+
+    .NavItem {
         font-size: 15px;
     }
-    .HeaderItem h1{
+
+    .HeaderItem h1 {
         font-size: 50px;
     }
-        .HeaderItem h2{
+
+    .HeaderItem h2 {
         font-size: 30px;
     }
-    nav{
+
+    nav {
         padding: 20px;
         gap: 15%;
         flex-direction: column;
     }
-    Header{
+
+    Header {
         height: 800px;
         background-size: cover;
         background-position: center;
     }
-    .BackgroundImg{
+
+    .BackgroundImg {
         width: 100%;
-    }
-    .HeaderItem{
-text-align: center;
-    }
-    .NavItems{
-     justify-content: space-between;
-     width: 90%;
     }
 
-    .NavItems a{
+    .HeaderItem {
+        text-align: center;
+    }
+
+    .NavItems {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .NavItems a {
         width: 8%;
     }
-    .NavItem{
+
+    .NavItem {
         width: 100%;
-        font-size:11px;
+        font-size: 11px;
     }
-    .ExpertiseItems{
+
+    .ExpertiseItems {
         flex-wrap: wrap;
     }
-    .ExpertiseItem{
+
+    .ExpertiseItem {
         width: 90%;
     }
-    main{
+
+    main {
         flex-wrap: wrap;
     }
-    .mainWork{
+
+    .mainWork {
         width: 100%;
     }
-    .WeatherForecastImg{
+
+    .WeatherForecastImg {
         height: 250px;
     }
-    .ViewProjectLink{
+
+    .ViewProjectLink {
         width: 100%;
     }
-    .ArrowImage{
+
+    .ArrowImage {
         width: 70%;
     }
-    .mainText{
+
+    .mainText {
         width: 100%;
     }
-    .mainText h1{
+
+    .mainText h1 {
         font-size: 50px;
     }
-    aside a{
+
+    aside a {
         width: 90%;
     }
-    aside{
+
+    aside {
         height: 1000px;
         gap: 30px;
     }
-   .accordion-container{
-    width: 90%;
-   }
-   .footerItem{
-    width: 100%;
-    font-size: 15px;
-   }
-   footer{
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    text-align: center;
-   }
-   .footerItem a{
-    width: 100%;
-    font-size: 18px;
-   }
-   .ExpertiseItemCode{
-    font-size: 22px;
-   }
+
+    .accordion-container {
+        width: 90%;
+    }
+
+    .footerItem {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        text-align: center;
+    }
+
+    .footerItem a {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .ExpertiseItemCode {
+        font-size: 22px;
+    }
 }
