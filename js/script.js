@@ -14,21 +14,20 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.1 });
-
-// Наблюдаем все блоки с классом .animate-block
 document.querySelectorAll('.animate-block').forEach(block => {
     observer.observe(block);
 });
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
   
-  // Удаляем все старые классы прокрутки
-  nav.classList.remove('scroll-top', 'scroll-middle', 'scroll-bottom');
   if(scrollPosition<70){
     nav.classList.remove('navScrolled')
+        NavLogo.style.display = "flex"
+
   }
   if(scrollPosition > 70){
     nav.classList.add('navScrolled')
+    NavLogo.style.display = "none"
   }
   console.log(scrollPosition)
 })
