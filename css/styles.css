@@ -329,8 +329,32 @@ aside {
 
 .asideFilters {
     width: 100%;
+    display: flex;
+padding: 50px;
+color: grey;
+align-items: center;
+font-size: 40px;
+padding-left: 10%;
+font-weight: 700;
 }
-
+.filter{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+position: relative;
+}
+.filterAll{
+    width: 45%;
+    border-right: 1px solid;
+    text-decoration: underline;
+    text-decoration: underline;
+text-underline-offset: 12px;
+text-decoration-thickness: 1px;
+color: rgb(216, 216, 216);
+}
 .asideItem:hover .asideItemImg {
     transform: scale(1.2);
 }
