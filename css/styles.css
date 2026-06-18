@@ -614,7 +614,7 @@ nav.navScrolled {
     }
 
     aside {
-        height: 1000px;
+       height: auto;
         gap: 30px;
     }
 
