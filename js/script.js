@@ -29,5 +29,4 @@ window.addEventListener('scroll', () => {
     nav.classList.add('navScrolled')
     NavLogo.style.display = "none"
   }
-  console.log(scrollPosition)
 })
